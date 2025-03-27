@@ -1,0 +1,730 @@
+/* Importing/changing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+    /* Body */
+
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: #909090;
+    }
+
+    .container{
+        display: flex;
+        height: auto;
+        min-height: 80vh;  
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* gevonden op: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(49, 49, 49);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1c1c1c;
+    }
+    ::-webkit-scrollbar-track {
+        background: #606060;
+    }
+
+    /* Header */
+
+    .headerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        max-width: 100vw;
+        height: 10vh;
+        grid-template-columns: 3fr 3fr;
+        align-items: center;
+        width: 100%;
+    }
+    .logo{
+        height: 8vh;
+        
+    }
+
+    /* Navagation in header */
+
+    .navagationHolder{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-right: 3rem;
+    }
+    .navtext{
+        display: none;
+    }
+    #hamburger{
+        height: 3vh;
+    }
+    #navagationH{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100vw;
+        background-color: rgb(59, 59, 59); 
+        position: absolute;
+    }
+    .navagation{
+        display: flex;
+        height: 10vh;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(26, 26, 26);
+        color: white;
+        text-decoration: none;
+        margin-top: 1rem;
+        
+    }
+    /* Footer */
+
+    .footerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+        grid-template-columns: 20fr 1fr;
+        width: 100%;
+    }
+    .logoFooter{
+        height: 7vh;
+        margin-right: 1.5rem;
+    }
+    .socialIcon{
+        height: 5vh;
+        margin-left: 1rem;
+    }
+
+    /* Homepage */
+
+
+
+    .homeBackround{
+        height: 70vh;
+        width: 95vw;
+        
+    }
+    .banner{
+        width: 100vw;
+        height: 15vh;
+        object-fit:cover;
+        
+    }
+    .textHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85vw;
+    }
+    .titleHome{
+        font-size: 1.3rem;
+    }
+
+    /* Menu */
+
+    .title{
+        margin-top: 2.4rem;
+        font-size: 1.3rem;
+    }
+
+    .menu{
+        display: grid;
+        width: 90vw;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    
+    }
+    .menuItems{
+        background-color: #606060;
+        padding-bottom: 2rem;
+    }
+
+    .imagesMenu{
+        height: 10rem;
+        width: 10rem;
+    }
+
+
+    /* Reseverings site */
+
+    .reseveren{
+        display: flex;
+        width: 80vw;
+        height: auto;
+        background-color: rgb(86, 86, 86);
+        margin-bottom: 2rem;
+        padding-bottom: 5rem;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formRe{
+        margin-top: 5rem;
+        box-sizing: border-box;   
+    }
+    .resImg{
+        height: 15vh;
+    }
+
+    /* Openingstijden & Locatie */
+
+    .reseverenContainer{
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+    }
+    .locatie{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(86, 86, 86);
+        height: auto;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    .reseverIMG{
+        height: 25vh;
+    }
+
+    /* Vacatures */
+    .bezorger{
+        grid-area: bezorger;
+    }
+    .kok{
+        grid-area: kok;
+    }
+    .bediening{
+        grid-area: bediening;
+    }
+    .vacaturesContainer{
+        display: grid;
+        width: 90vw;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-areas: "bezorger" "bediening" "kok";
+        
+    }
+    .vacatures{
+        text-align: center;
+    }
+    .vacaIMG{
+        height: 20vh;
+        width: 60vw;
+        overflow: hidden;
+    }
+    .salaris{
+        font-size: .6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Ipad */
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+     /* Body */
+
+     body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: #909090;
+    }
+
+    .container{
+        display: flex;
+        height: auto;
+        min-height: 80vh;  
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* gevonden op: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(49, 49, 49);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1c1c1c;
+    }
+    ::-webkit-scrollbar-track {
+        background: #606060;
+    }
+
+    /* Header */
+
+    .headerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        max-width: 100vw;
+        height: 10vh;
+        grid-template-columns: 3fr 3fr;
+        align-items: center;
+        width: 100%;
+    }
+    .logo{
+        height: 8vh;
+        
+    }
+
+    /* Navagation in header */
+
+    .navagationHolder{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-right: 3rem;
+    }
+    .navtext{
+        display: none;
+    }
+    #hamburger{
+        height: 3vh;
+    }
+    #navagationH{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100vw;
+        background-color: rgb(59, 59, 59); 
+        position: absolute;
+    }
+    .navagation{
+        display: flex;
+        height: 10vh;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(26, 26, 26);
+        color: white;
+        text-decoration: none;
+        margin-top: 1rem;
+        
+    }
+    /* Footer */
+
+    .footerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+        grid-template-columns: 20fr 1fr;
+        width: 100%;
+    }
+    .logoFooter{
+        height: 7vh;
+        margin-right: 1.5rem;
+    }
+    .socialIcon{
+        height: 5vh;
+        margin-left: 1rem;
+    }
+
+    /* Homepage */
+
+
+
+    .homeBackround{
+        height: 70vh;
+        width: 95vw;
+        
+    }
+    .banner{
+        width: 100vw;
+        height: 15vh;
+        object-fit:cover;
+        
+    }
+    .textHolder{
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85vw;
+    }
+    .titleHome{
+        font-size: 1.7rem;
+    }
+
+    /* Menu */
+
+    .title{
+        margin-top: 2.4rem;
+        font-size: 1.3rem;
+    }
+
+    .menu{
+        display: grid;
+        width: 80vw;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    
+    }
+    .line{
+        display: none;
+    }
+    .menuItems{
+        display: grid;
+        justify-content: center;
+        background-color: #606060;
+        padding-bottom: 2rem;
+
+    }
+
+    .imagesMenu{
+        height: 10rem;
+        width: 10rem;
+    }
+
+
+    /* Reseverings site */
+
+    .reseveren{
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        background-color: rgb(86, 86, 86);
+        margin-bottom: 2rem;
+        padding-bottom: 5rem;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formRe{
+        margin-top: 5rem;
+        box-sizing: border-box;   
+    }
+    .resImg{
+        height: 15vh;
+    }
+
+    /* Openingstijden & Locatie */
+
+    .reseverenContainer{
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        text-align: center;
+    }
+    .locatie{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(86, 86, 86);
+        height: auto;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+    .reseverIMG{
+        height: 25vh;
+    }
+
+    /* Vacatures */
+    .bezorger{
+        grid-area: bezorger;
+    }
+    .kok{
+        grid-area: kok;
+    }
+    .bediening{
+        grid-area: bediening;
+    }
+    .vacaturesContainer{
+        display: grid;
+        width: 90vw;
+        grid-template-rows: 2.2fr 2.2fr 4fr;
+        gap: 2rem;
+        grid-template-areas: "bezorger" "bediening" "kok";
+        
+    }
+    .vacatures{
+        text-align: center;
+    }
+    .vacaIMG{
+        height: 20vh;
+        width: 50vw;
+        overflow: hidden;
+    }
+    .salaris{
+        font-size: .6rem;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    /* Body */
+
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: #E0E0E0;
+        background-image: linear-gradient(to right, #C2C2C2, #606060);
+    }
+
+    .container{
+        display: flex;
+        height: auto;
+        min-height: 80vh;  
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* gevonden op: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(49, 49, 49);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1c1c1c;
+    }
+    ::-webkit-scrollbar-track {
+        background: #606060;
+    }
+
+    /* Header */
+
+    .headerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        max-width: 100vw;
+        height: 10vh;
+        grid-template-columns: 3fr 3fr;
+        align-items: center;
+        width: 100%;
+    }
+    .logo{
+        height: 10vh;
+        
+    }
+
+    /* Navagation in header */
+
+    .navagationHolder{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 3rem;
+    }
+
+    .navagation{
+        color: white;
+        margin-left: 1rem;
+        text-decoration: none;    
+    }
+
+    .navagation:hover{
+        color: gray;
+    }
+    #hamburger{
+        display: none;
+    }
+    #navagationH{
+        display: none;
+    }
+    /* Footer */
+
+    .footerHolder{
+        display: grid;
+        margin: 0rem;
+        background-color: black;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+        grid-template-columns: 20fr 1fr;
+        width: 100%;
+    }
+    .logoFooter{
+        height: 8vh;
+    }
+    .socialIcon{
+        height: 8vh;
+        margin-left: 1rem;
+    }
+    /* Homepage */
+
+
+
+    .homeBackround{
+        height: 70vh;
+        width: 95vw;
+        
+    }
+    .banner{
+        width: 100vw;
+        height: 25vh;
+        object-fit:cover;
+        
+    }
+    .textHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85vw;
+    }
+    .titleHome{
+        font-size: 1.3rem;
+    }
+
+    /* Menu */
+
+    .title{
+        margin-top: 2.4rem;
+        font-size: 1.3rem;
+    }
+
+    .menu{
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    grid-template-areas: 
+    "title1 title2 title3"
+    "voor main drink"
+    "voor main drink";
+    
+    }
+    .menuItems{
+        background-color: #606060;
+        padding-bottom: 2rem;
+    }
+    .title1{
+        grid-area: title1;
+    }
+    .title2{
+        grid-area: title2; 
+    }
+    .title3{
+        grid-area: title3; 
+    }
+    .title3, .title2, .title1 {
+        margin-bottom: 3rem;
+    }
+    .maingerechten1{
+        grid-area: main;
+    }
+    .drink1{
+        grid-area: drink;
+    }
+    .voorgerechten1{
+        grid-area: voor;
+    }
+    .maingerechten2{
+        grid-area: main2;
+    }
+    .drink2{
+        grid-area: drink2;
+    }
+    .voorgerechten2{
+        grid-area: voor2;
+    }
+    .imagesMenu{
+        height: 10rem;
+        width: 10rem;
+    }
+
+
+    /* Reseverings site */
+
+    .reseveren{
+        display: flex;
+        width: 80vw;
+        height: auto;
+        background-color: rgb(86, 86, 86);
+        margin-bottom: 2rem;
+        padding-bottom: 5rem;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formRe{
+        margin-top: 5rem;
+        box-sizing: border-box;   
+    }
+
+    /* Openingstijden & Locatie */
+
+    .reseverenContainer{
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .locatie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(86, 86, 86);
+        height: auto;
+        min-height: 120vh;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    .reseverIMG{
+        height: 35vh;
+    }
+
+    /* Vacatures */
+
+    .vacaturesContainer{
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        
+    }
+    .vacatures{
+        text-align: center;
+    }
+    .vacaIMG{
+        height: 40vh;
+        width: 25vw;
+        overflow: hidden;
+    }
+    .salaris{
+        font-size: .6rem;
+        margin-bottom: 3rem;
+    }
+}
