@@ -6,4 +6,4 @@ Laatste alleen Sem
 
 95% alleen door Sem van der Smeede
 
-Sarah heeft alleen gewerkt aan de de Visual Designs daarom mocht ik van Verbaas alleen de visual designs maken van de Homepagina. Dit was vooral omdat ik uiteindelijk helemaal alleen was en Sarah's visual designa waren heel anders en ik had daardoor weinig tijd om er aan te werken.
+Sarah heeft alleen gewerkt aan de Visual Designs daarom mocht ik van mvr. Verbaas alleen de visual designs maken van de Homepagina, dit was vooral omdat ik uiteindelijk helemaal alleen was en Sarah's visual designa waren heel anders en ik had daardoor weinig tijd om er aan te werken.
