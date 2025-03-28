@@ -11,7 +11,7 @@
                         // als page het zelfde is als pagename dan is het "<b>{$text}</b>" en als het niet zo is is het "$text"
                         $boldedText = ($page == $pageName) ? "<b>{$text}</b>" : $text;
                         // stored de tekst die hij moet printen (verschilt per pagina)
-                        return "<a href='${page}' class='navagation'>${boldedText}</a>";
+                        return "<a href='${page}' id='${text}' onmouseover='navGrow(\"${text}\")' onmouseleave='navUnGrow(\"${text}\")' class='navagation'>${boldedText}</a>";
                     }
                     // echo'd het met of zonder bold
                     echo navagationBolder("menu.php", "Menu");
