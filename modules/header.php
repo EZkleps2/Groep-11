@@ -7,7 +7,7 @@
                 
                 // links waar ik dingen heb gevonden:
                 // https://www.w3schools.com/Php/func_filesystem_basename.asp base name function
-                // https://www.w3schools.com/php/php_operators.asp#:~:text=Try%20it-,%3F%3A,-Ternary de ? operator!
+                // https://www.w3schools.com/php/php_operators.asp#:~:text=Try%20it-,%3F%3A,-Ternary de ? operator
                 
                 // maakt site waar hij op zit bolded/strong
                     function navagationBolder($page, $text){
